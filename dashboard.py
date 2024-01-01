@@ -19,7 +19,7 @@ if fl is not None:
     df = pd.read_csv(filename, encoding = "ISO-8859-1")
 else:
     os.chdir(r"c:\Users\dell\OneDrive - AlmaBetter\Desktop\dash")
-    df = pd.read_csv("Final_Registration_Data.csv", encoding = "ISO-8859-1")
+    df = pd.read_csv("output.csv", encoding = "ISO-8859-1")
 
 col1, col2 = st.columns((2))
 df["regn_date"] = pd.to_datetime(df["regn_date"])
